@@ -1,3 +1,4 @@
+@file:JvmName("ActivityInject")
 package com.melrose1994.baselibrary.ioc.ui
 
 import android.app.Activity
@@ -10,13 +11,13 @@ import com.melrose1994.baselibrary.ioc.findById
  */
 
 
- fun Activity.inject(){
+ fun inject(activity: Activity){
 
-    injectContentView()
+    activity.injectContentView()
 
-    injectFiled()
+    activity.injectFiled()
 
-    injectEvent()
+    activity.injectEvent()
 
  }
 
