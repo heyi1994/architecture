@@ -20,14 +20,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         inject()
-
-
         mTextView.text = "Melrose"
     }
 
 
     @OnClick(intArrayOf(R.id.tvMessage))
     private fun onTextClick(v: View){
-           Toast.makeText(this,"text click",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"text click",Toast.LENGTH_SHORT).show()
     }
 }

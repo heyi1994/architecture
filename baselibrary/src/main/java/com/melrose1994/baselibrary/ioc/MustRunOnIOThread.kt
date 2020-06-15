@@ -7,4 +7,6 @@ package com.melrose1994.baselibrary.ioc
 
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)
+@Repeatable
+@MustBeDocumented
 annotation class MustRunOnIOThread
