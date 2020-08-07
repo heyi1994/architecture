@@ -1,11 +1,14 @@
 package com.melrose1994.architecture;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.melrose1994.baselibrary.extend.ThreadUtils;
 import com.melrose1994.baselibrary.ioc.ui.ActivityInject;
+
 
 /**
  * @author Melrose
@@ -18,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ActivityInject.inject(this);
+
+
+
+
+       // throw  new IllegalStateException("crash from code!");
+
+
     }
 }

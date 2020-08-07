@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">architecture</string>
+    <string name="button_splash_name">welcome</string>
+    <string name="string_main_title">this is from ui interface</string>
 </resources>
