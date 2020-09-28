@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="splitties_views_dsl_ide_preview_package_name_suffix" translatable="false">.debug</string>
+</resources>

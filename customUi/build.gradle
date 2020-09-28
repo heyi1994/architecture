@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -13,35 +13,22 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles 'consumer-rules.pro'
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
-            buildConfigField("boolean", "IS_DEBUG_MODE", "${rootProject.ext.isDebugMode}")
-            buildConfigField("String", "TAG", "\"${rootProject.ext.tag}\"")
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-
-        debug{
-            buildConfigField("boolean", "IS_DEBUG_MODE", "${rootProject.ext.isDebugMode}")
-            buildConfigField("String", "TAG", "\"${rootProject.ext.tag}\"")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation rootProject.ext.librarys["Logger"]
     implementation rootProject.ext.librarys["Splitties-Base"]
     implementation rootProject.ext.librarys["Android-Ktx"]
     implementation rootProject.ext.librarys["Android-AppCompat"]
     implementation rootProject.ext.librarys["Kotlin"]
-}
-repositories {
-    mavenCentral()
 }

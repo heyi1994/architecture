@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-
+//debug/res/layout
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -20,6 +20,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            applicationIdSuffix ".debug" // This changes the packageName returned from a Context
+            versionNameSuffix "-DEBUG"
+        }
     }
 }
 
@@ -31,4 +36,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation project(path: ':baselibrary')
     implementation rootProject.ext.librarys["Splitties-Dsl"]
+    implementation rootProject.ext.librarys["Splitties-Base"]
+    debugImplementation rootProject.ext.librarys["Splitties-Dsl-Preview"]
+}
+repositories {
+    mavenCentral()
 }

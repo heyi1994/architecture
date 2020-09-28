@@ -25,6 +25,8 @@ ext{
              "Splitties-Base":"com.louiscad.splitties:splitties-fun-pack-android-base:$splitties_version",
 
              "Splitties-Dsl":"com.louiscad.splitties:splitties-views-dsl:$splitties_version",
+             //splitties dsl -预览库
+             "Splitties-Dsl-Preview":"com.louiscad.splitties:splitties-views-dsl-ide-preview:$splitties_version",
 
              "Android-Ktx":"androidx.core:core-ktx:1.3.0",
 

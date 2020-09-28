@@ -1,2 +1,3 @@
+include ':customUi'
 include ':app', ':baselibrary'
 rootProject.name='architecture'
