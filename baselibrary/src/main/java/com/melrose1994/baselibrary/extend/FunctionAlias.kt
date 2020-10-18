@@ -5,9 +5,4 @@ package com.melrose1994.baselibrary.extend
  * @since 1.0.0
  */
 
-
-typealias VoidCallback = ()->Unit
-
-
-
 typealias OneParamCallback<T> = (T)->Unit

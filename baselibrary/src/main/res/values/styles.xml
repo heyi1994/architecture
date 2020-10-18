@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogStyle_No_Frame" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:listPreferredItemPaddingLeft">0dip</item>
+        <item name="android:listPreferredItemPaddingRight">0dip</item>
+        <item name="android:listPreferredItemPaddingStart">0dip</item>
+        <item name="android:listPreferredItemPaddingEnd">0dip</item>
+    </style>
+
+
+
+    <style name="window_bi_bo_style">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+
+    <style name="window_bi_to_style">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+
+    <style name="window_ti_to_style">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+
+    <style name="window_ti_bo_style">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+
+    <style name="window_li_lo_style">
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+
+    <style name="window_li_ro_style">
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="window_ri_ro_style">
+        <item name="android:windowEnterAnimation">@anim/right_out</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="window_ri_lo_style">
+        <item name="android:windowEnterAnimation">@anim/right_out</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+</resources>

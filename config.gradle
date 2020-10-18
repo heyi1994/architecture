@@ -1,4 +1,5 @@
 
+//查看AndroidX相关库查看 https://maven.google.com/web/index.html
 ext{
 
      compileSdkVersion = 29
@@ -32,6 +33,8 @@ ext{
 
              "Android-AppCompat":"androidx.appcompat:appcompat:1.1.0",
 
-             "Kotlin":"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+             "Kotlin":"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+
+             "Android-CardView":"androidx.cardview:cardview:1.0.0"
      ]
 }

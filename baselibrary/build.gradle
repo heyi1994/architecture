@@ -41,6 +41,10 @@ dependencies {
     implementation rootProject.ext.librarys["Android-Ktx"]
     implementation rootProject.ext.librarys["Android-AppCompat"]
     implementation rootProject.ext.librarys["Kotlin"]
+    implementation rootProject.ext.librarys["Android-CardView"]
+
+    implementation rootProject.ext.librarys["Splitties-Dsl"]
+    debugImplementation rootProject.ext.librarys["Splitties-Dsl-Preview"]
 }
 repositories {
     mavenCentral()

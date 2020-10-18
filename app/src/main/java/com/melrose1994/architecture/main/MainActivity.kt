@@ -15,7 +15,8 @@ class MainActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
 
         val ui = MainUi(this)
-
         setContentView(ui)
+
+        
     }
 }
